@@ -2,7 +2,7 @@
   <div class="container">
 
     <!-- TEAM NAME -->
-    <a class="navbar-brand" href="#">BUCT-China</a>
+    <a class="navbar-brand" href="{{ url_for('home') }}">BUCT-China</a>
 
     <!-- SMALL SCREEN MENU ICON -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +10,7 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto left-aligned">
+      <ul class="navbar-nav ms-auto left-aligned">
 
         <!-- HOME -->
         <li class="nav-item">
@@ -24,7 +24,7 @@
 
         <!-- PROJECT -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='description') }}" id="navbar-project" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Project
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbar-project">
@@ -37,7 +37,7 @@
 
         <!-- WET LAB -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-wet-lab" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='experiments') }}" id="navbar-wet-lab" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Wet Lab
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbar-wet-lab">
@@ -51,7 +51,7 @@
 
         <!-- DRY LAB -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-dry-lab" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='model') }}" id="navbar-dry-lab" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dry Lab
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbar-dry-lab">
@@ -63,7 +63,7 @@
 
         <!-- ENGAGEMENT -->
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbar-engagement" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="{{ url_for('pages', page='entrepreneurship') }}" id="navbar-engagement" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Engagement
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbar-engagement">
